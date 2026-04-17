@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Service</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Book a Service</h2>
+
+  <form onsubmit="return validateBooking()">
+    <label>Name</label>
+    <input id="name" type="text">
+    <p class="error" id="nameErr"></p>
+
+    <label>Phone</label>
+    <input id="phone" type="text">
+    <p class="error" id="phoneErr"></p>
+
+    <label>Select Service</label>
+    <select id="service">
+      <option value="">Choose...</option>
+      <option>Home Cleaning</option>
+      <option>Plumbing</option>
+      <option>Electrician</option>
+      <option>AC Repair</option>
+    </select>
+    <p class="error" id="serviceErr"></p>
+
+    <button>Submit</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
